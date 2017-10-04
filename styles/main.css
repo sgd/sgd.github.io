@@ -3,9 +3,5 @@ body {
 }
 
 .infobox {
-  border: 1px solid #fff;
-  width: 50%;
-  margin: 0 auto;
-  padding: 15px;
-  color: #fff;
+  border: 1px solid red;
 }
