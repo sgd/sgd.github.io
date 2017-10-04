@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
 
 html {
-  background: #000000;
+  background: #F4EFEA;
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
@@ -19,19 +19,29 @@ body {
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.5;
   font-weight: 200;
+  color: #394858;
 }
 
 a {
-  color: #FC3B59;
+  color: #394858;
+  text-decoration: underline;
+  transition: all .1s ease-in-out;
+}
+
+a:hover{
+  background: #FC3B59;
+  color: #fff;
 }
 
 .infobox {
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 30px 30px 50px 30px;
   color: #fff;
-  text-align: center;
+  background: #ffffff;
+  max-width: 50%;
+  box-shadow: 0 1px 30px rgba(202, 192, 181, 0.4);
 }
 
 .infobox__title {
@@ -39,5 +49,11 @@ a {
 }
 
 .infobox__link {
-  display: block;
+  color: #FC3B59;
+  display: inline-block;
+  transition: all .1s ease-in-out;
 }
+
+
+    
+
