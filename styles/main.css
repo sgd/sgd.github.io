@@ -1,6 +1,6 @@
 body {
   background: #000000;
-  font: 'San Francisco', Helvetica, Arial, san-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .infobox {
