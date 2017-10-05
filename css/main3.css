@@ -40,6 +40,12 @@ a:hover{
   color: #fff;
 }
 
+/* Nav */
+
+nav {
+  border-bottom: 1px solid #D8D8D8;
+}
+
 .infobox {
   flex: 0;
   align-items: center;
