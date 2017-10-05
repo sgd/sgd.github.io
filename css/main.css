@@ -121,11 +121,18 @@ header h1 {
   max-width: 60%;
 }
 
+.header__content .header__bodytext {
+  margin-bottom: 40px;
+}
+
+
+/* Mobile until SASS */
+
 @media only screen and (max-width: 768px) {
 
   header {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 72px;
+    padding-bottom: 72px;
   }
 
   .header__content {
@@ -133,7 +140,4 @@ header h1 {
   }
 }
 
-.header__content .header__bodytext {
-  margin-bottom: 40px;
-}
 
