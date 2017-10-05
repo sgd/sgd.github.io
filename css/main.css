@@ -130,6 +130,11 @@ header h1 {
 
 @media only screen and (max-width: 768px) {
 
+  nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
   header {
     padding-top: 72px;
     padding-bottom: 72px;
