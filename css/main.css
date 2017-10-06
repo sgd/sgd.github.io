@@ -128,22 +128,27 @@ header h1 {
 /* Testimomnials */
 
 .testimonials {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 64px 35px 80px;
+  padding: 64px 35px;
+  text-align: center;
+} 
+
+.testimonials__inner {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.testimonials__container {
-  max-width: 60%;
+.testimonials__slide {
   background: #ffffff;
   box-shadow: 0 2px 30px rgba(223, 98, 77, 0.9);
   padding: 48px 96px;
   text-align: center;
+  margin: 20px;
 }
 
 .testimonials__title {
   color: #ffffff;
+  margin-bottom: 0;
 }
 
 .testimonials__body {
@@ -156,6 +161,8 @@ header h1 {
   height: 95px;
   width: 95px;
   border-radius: 500px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 8px;
 }
 
@@ -178,6 +185,35 @@ header h1 {
   margin-bottom: 0;
 }
 
+.testimonial__arrows {
+  text-align: right;
+  margin: 0 20px -20px;
+}
+
+.arrow--left,
+.arrow--right {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  color: #ffffff;
+  border: none;
+}
+
+.arrow--left {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+.arrow--right {
+  margin-left: 5px;
+  text-align: right;
+  padding-right: 0;
+  padding-left: 15px;
+}
+
 
 /* Mobile until SASS */
 
@@ -197,14 +233,17 @@ header h1 {
     max-width: 80%;
   }
 
-  .testimonials {
-    padding: 32px 24px 64px;
+  .testimonials__inner {
+    max-width: 100%;
   }
 
-  .testimonials__container {
-    max-width: 80%;
-    padding: 48px 32px;
+  .testimonials {
+    padding: 32px 0px 48px;
   }
+
+  .testimonials__slide {
+    padding: 40px 24px;
+  } 
 }
 
 
