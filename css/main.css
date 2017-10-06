@@ -12,7 +12,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  line-height: 1.25;
+  line-height: 1.5;
   font-weight: 200;
   color: #394858;
 }
@@ -99,7 +99,7 @@ nav a:hover {
 }
 
 nav a + a {
-  margin-left: 25px;
+  margin-left: 35px;
 }
 
 /* Header */
@@ -125,6 +125,59 @@ header h1 {
   margin-bottom: 40px;
 }
 
+/* Testimomnials */
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 64px 35px 80px;
+}
+
+.testimonials__container {
+  max-width: 60%;
+  background: #ffffff;
+  box-shadow: 0 2px 30px rgba(223, 98, 77, 0.9);
+  padding: 48px 96px;
+  text-align: center;
+}
+
+.testimonials__title {
+  color: #ffffff;
+}
+
+.testimonials__body {
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+.testimonial__image {
+  height: 95px;
+  width: 95px;
+  border-radius: 500px;
+  margin-bottom: 8px;
+}
+
+.testimonial__name {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.testimonial__company {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: rgba(165, 154, 154, 0.6);
+  margin-bottom: 0;
+}
+
 
 /* Mobile until SASS */
 
@@ -142,6 +195,15 @@ header h1 {
 
   .header__content {
     max-width: 80%;
+  }
+
+  .testimonials {
+    padding: 32px 24px 64px;
+  }
+
+  .testimonials__container {
+    max-width: 80%;
+    padding: 48px 32px;
   }
 }
 
