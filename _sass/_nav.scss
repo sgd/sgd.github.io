@@ -1,0 +1,48 @@
+/* Nav */
+
+nav {
+  @include grid-container;
+  border-bottom: 1px solid #e2e2e2;
+  background: #ffffff;
+  padding: 32px 32px 24px;
+  
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a + a {
+    margin-left: 35px;
+  }
+}
+
+.nav__inner {
+  @include grid-column(12);
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+
+.logo {
+  height: 32px;
+  display: inline-block;
+  margin-right: 30px;
+  fill: #394858;
+  transition: all .1s ease-in-out;
+}
+
+.logo:hover {
+  fill: rgba(250,144,112,1);
+  transform: scale(1.2);
+}
