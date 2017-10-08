@@ -1,0 +1,16 @@
+/* Buttons */
+
+.button--primary {
+  display: inline-block;
+  background: #394A9F;
+  padding: 15px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+  text-align: center;
+}
+
+.button--primary:hover {
+  background: #192A7D;
+  box-shadow: 0 2px 20px rgba(0,0,0, 0.3);
+}

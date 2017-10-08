@@ -2,3 +2,5 @@ name: Nick Foster
 markdown: kramdown
 plugins:
   - jekyll-sitemap
+sass:
+  sass_dir: _sass

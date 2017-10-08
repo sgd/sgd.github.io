@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.5;
+  font-weight: 200;
+  color: #394858;
+}
+
+h1 {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 53px;
+}
+
+h2 {
+  font-size: 44px;
+}
+
+h3 {
+  font-size: 37px;
+}
+
+h4 {
+  font-size: 31px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+h6 {
+  font-size: 21px;
+}
+
+a {
+  color: #394858;
+  text-decoration: underline;
+  transition: all .1s ease-in-out;
+}
