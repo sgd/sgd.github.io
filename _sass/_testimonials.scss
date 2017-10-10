@@ -9,6 +9,10 @@
   (max-width: $screen-sm) {
     padding: 32px 0px 16px;
   }
+
+  .slick-track {
+    padding-bottom: 15px;
+  }
 } 
 
 .testimonials__inner {
