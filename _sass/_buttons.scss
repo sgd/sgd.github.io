@@ -8,9 +8,25 @@
   text-decoration: none;
   transition: all .1s ease-in-out;
   text-align: center;
+
+  &:hover {
+    background: #192A7D;
+    box-shadow: 0 2px 20px rgba(0,0,0, 0.3);
+  }
 }
 
-.button--primary:hover {
-  background: #192A7D;
-  box-shadow: 0 2px 20px rgba(0,0,0, 0.3);
+.button--secondary {
+  display: inline-block;
+  background: transparent;
+  padding: 15px 20px;
+  color: #394A9F;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+  text-align: center;
+
+  &:hover {
+    background: #ffffff;
+    text-decoration: underline;
+    box-shadow: 0 2px 20px rgba(0,0,0, 0.3);
+  }
 }
