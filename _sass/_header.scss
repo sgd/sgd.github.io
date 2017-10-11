@@ -3,7 +3,7 @@
 header {
   @include grid-container;
   background: #ffffff;
-  padding: 96px 32px;
+  padding: 104px 32px;
 
   @media only screen and 
   (max-width: $screen-sm) {
@@ -26,6 +26,11 @@ header {
       margin-bottom: 8px;
       margin-left: 0;
     }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      display: block;
+    }
   }
 }
 
@@ -35,6 +40,18 @@ header {
   @media only screen and 
   (max-width: $screen-sm) {
     font-size: 44px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    font-size: 31px;
+  }
+}
+
+.header__subtitle {
+  @media only screen and 
+  (max-width: $screen-xs) {
+    font-size: 21px;
   }
 }
 

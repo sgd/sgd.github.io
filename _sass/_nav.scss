@@ -1,10 +1,40 @@
-/* Nav */
+/* Mobile Nav */ 
 
-nav {
+.mobile-nav-trigger {
+  border-bottom: 1px solid #e2e2e2;
+  background: #ffffff;
+  padding: 16px;
+  display: none;
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    display: block;
+  }
+
+  .toggle-button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 0;
+  }
+}
+
+.mobile-nav {
+  display: none;
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    display: block;
+  }
+}
+
+/* Desktop Nav */
+
+.desktop-nav {
   @include grid-container;
   border-bottom: 1px solid #e2e2e2;
   background: #ffffff;
-  padding: 32px 32px 24px;
+  padding: 24px;
   
   @media only screen and 
   (max-width: $screen-sm) {
@@ -12,17 +42,22 @@ nav {
     padding-bottom: 24px;
   }
 
-  a {
+  @media only screen and 
+  (max-width: $screen-xs){
+    display: none;
+  }
+
+  .nav__item {
     text-decoration: none;
     font-size: 16px;
     font-weight: 100;
   }
 
-  a:hover {
+  .nav__item:hover {
     text-decoration: underline;
   }
 
-  a + a {
+  .nav__item + .nav__item {
     margin-left: 35px;
   }
 }
@@ -39,6 +74,7 @@ nav {
   height: 32px;
   display: inline-block;
   margin-right: 30px;
+  margin-bottom: -5px;
   fill: #394858;
   transition: all .1s ease-in-out;
 }
@@ -46,4 +82,65 @@ nav {
 .logo:hover {
   fill: rgba(250,144,112,1);
   transform: scale(1.2);
+}
+
+
+/* Slide out */
+
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+  background: #394858;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  .nav__item {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 100;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+}
+
+.slideout-open .slideout-menu {
+  @media only screen and 
+  (min-width: $screen-xs){
+    display: none !important;
+  }
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  min-height: 100vh;
+  background-color: #ffffff; /* A background-color is required */
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
 }
