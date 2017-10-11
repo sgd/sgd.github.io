@@ -4,6 +4,8 @@
   @include grid-container;
   padding: 64px 32px 32px;
   text-align: center;
+  background: rgba(250,144,112,1);
+  background: linear-gradient(left, rgba(250,144,112,1) 0%, rgba(251,130,111,1) 100%);
 
   @media only screen and 
   (max-width: $screen-sm) {
@@ -42,12 +44,28 @@
 .testimonials__title {
   color: #ffffff;
   margin-bottom: 0;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    font-size: 44px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    font-size: 31px;
+  }
 }
 
 .testimonials__body {
   font-size: 18px;
   line-height: 2;
   margin-bottom: 40px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .testimonial__image {
@@ -76,6 +94,12 @@
   letter-spacing: 2px;
   color: rgba(165, 154, 154, 0.6);
   margin-bottom: 0;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
 }
 
 .testimonial__arrows {
