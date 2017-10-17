@@ -24,28 +24,40 @@
   @include grid-shift(1);
 
   @media only screen and 
-  (max-width: $screen-xs) {
+  (max-width: $screen-sm) {
     @include grid-column(12);
     @include grid-shift(0);
   }
 }
 
 .work__description {
+
   @media only screen and 
-  (min-width: $screen-xs) {
+  (min-width: $screen-sm) {
     @include grid-column(5);
+  }
+
+  @media only screen and 
+  (min-width: $screen-xs) and (max-width: $screen-xs-max){
+    @include grid-column(6);
   }
 
    @media only screen and 
   (max-width: $screen-xs) {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 }
 
 .work__image {
+
   @media only screen and 
-  (min-width: $screen-xs) {
+  (min-width: $screen-sm) {
     @include grid-column(7);
+  }
+
+  @media only screen and 
+  (min-width: $screen-xs) and (max-width: $screen-xs-max){
+    @include grid-column(6);
   }
 
   img {
@@ -114,7 +126,7 @@
 
   @media only screen and 
   (max-width: $screen-xs) {
-    font-size: 21px;
+    font-size: 31px;
   }
 }
 
