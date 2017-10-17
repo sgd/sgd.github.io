@@ -1,13 +1,22 @@
 /* Buttons */
 
-.button--primary {
+%button {
   display: inline-block;
-  background: #394A9F;
   padding: 15px 20px;
-  color: #ffffff;
   text-decoration: none;
   transition: all .1s ease-in-out;
-  text-align: center;
+  text-align: center;  
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    font-size: 16px;
+  }
+}
+
+.button--primary {  
+  @extend %button;
+  background: #394A9F;
+  color: #ffffff;  
 
   &:hover {
     background: #192A7D;
@@ -15,14 +24,10 @@
   }
 }
 
-.button--secondary {
-  display: inline-block;
+.button--secondary { 
+  @extend %button;
   background: transparent;
-  padding: 15px 20px;
   color: #394A9F;
-  text-decoration: none;
-  transition: all .1s ease-in-out;
-  text-align: center;
 
   &:hover {
     background: #ffffff;
