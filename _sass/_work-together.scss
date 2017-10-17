@@ -24,8 +24,14 @@
 
 .collaborate__inner {
   display: flex;
-  @include grid-column(10);
-  @include grid-shift(1);
+  @include grid-column(8);
+  @include grid-shift(2);
+
+  @media only screen and 
+  (max-width: $screen-md) {
+    @include grid-column(10);
+    @include grid-shift(1);
+  }
 
   @media only screen and 
   (max-width: $screen-sm) {
@@ -36,8 +42,8 @@
 
   .card {    
     @include grid-column(6);
-    box-shadow: 0 20px 30px rgba(0,0,0, 0.1);
-    padding: 0 24px 24px;
+    box-shadow: 0 20px 30px rgba($grey, 0.1);
+    padding: 0 32px 32px;
     background: #ffffff;
     box-sizing: border-box;
     flex: 1;
@@ -52,4 +58,9 @@
 
 .option__header {
   font-family: 'Libre Baskerville', sans-serif;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+      font-size: 25px;
+  }
 }
