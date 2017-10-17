@@ -1,6 +1,13 @@
 .collaborate__header {
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding-top: 104px;
+  padding-bottom: 144px;
+  background: $grey-light;
+
+  @media only screen and 
+  (max-width: $screen-md) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
 
   @media only screen and 
   (max-width: $screen-sm) {
@@ -11,27 +18,21 @@
 
 .collaborate-options {
   @include grid-container;
-  padding-top: 88px;
-  padding-bottom: 88px;
-  background: #F9F9FA;
+  padding-bottom: 208px;
+  margin-top: -48px;
 
   @media only screen and 
   (max-width: $screen-sm) {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    margin-top: 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 
 .collaborate__inner {
   display: flex;
-  @include grid-column(8);
-  @include grid-shift(2);
-
-  @media only screen and 
-  (max-width: $screen-md) {
-    @include grid-column(10);
-    @include grid-shift(1);
-  }
+  @include grid-column(10);
+  @include grid-shift(1);
 
   @media only screen and 
   (max-width: $screen-sm) {
@@ -42,11 +43,14 @@
 
   .card {    
     @include grid-column(6);
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 20px 30px rgba($grey, 0.1);
-    padding: 0 32px 32px;
+    padding: 48px;
     background: #ffffff;
     box-sizing: border-box;
     flex: 1;
+    text-align: center;
 
     @media only screen and 
     (max-width: $screen-sm) {
@@ -56,11 +60,17 @@
   }
 }
 
+.option__body {
+  flex: 1;
+}
+
 .option__header {
   font-family: 'Libre Baskerville', sans-serif;
+  margin-top: 0;
 
   @media only screen and 
   (max-width: $screen-sm) {
-      font-size: 25px;
+    font-size: 25px;
   }
 }
+
