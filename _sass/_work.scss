@@ -154,3 +154,12 @@
     max-width: 800px;
   }
 }
+
+.example-commandwear .work__image img{
+  max-width: 800px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    max-width: 700px;
+  }
+}
