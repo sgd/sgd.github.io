@@ -1,8 +1,17 @@
 //== Colours ==//
 
 $grey: #394858;
-$grey-medium: #C5C9CE;
+$grey-medium: #B8BCC2;
 $grey-light: #F9F9FA;
+
+$orange: rgba(250,144,112,1);
+
+$blue: #394A9F;
+
+@mixin orange-gradient {
+  background: rgba(250,144,112,1);
+  background: linear-gradient(left, rgba(250,144,112,1) 0%, rgba(251,130,111,1) 100%);
+}
 
 //== Media queries breakpoints
 //

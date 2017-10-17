@@ -2,10 +2,9 @@
 
 .testimonials {
   @include grid-container;
+  @include orange-gradient;
   padding: 64px 32px 32px;
   text-align: center;
-  background: rgba(250,144,112,1);
-  background: linear-gradient(left, rgba(250,144,112,1) 0%, rgba(251,130,111,1) 100%);
 
   @media only screen and 
   (max-width: $screen-sm) {
