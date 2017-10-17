@@ -1,0 +1,66 @@
+.collaborate__header {
+  padding-top: 88px;
+  padding-bottom: 88px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.collaborate-options {
+  @include grid-container;
+  padding-top: 88px;
+  padding-bottom: 88px;
+  background: #F9F9FA;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.collaborate__inner {
+  display: flex;
+  @include grid-column(8);
+  @include grid-shift(2);
+
+  @media only screen and 
+  (max-width: $screen-md) {
+    @include grid-column(10);
+    @include grid-shift(1);
+  }
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    display: block;
+    @include grid-column(12);
+    @include grid-shift(0);
+  }
+
+  .card {    
+    @include grid-column(6);
+    box-shadow: 0 20px 30px rgba($grey, 0.1);
+    padding: 0 32px 32px;
+    background: #ffffff;
+    box-sizing: border-box;
+    flex: 1;
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      @include grid-column(12);
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.option__header {
+  font-family: 'Libre Baskerville', sans-serif;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+      font-size: 25px;
+  }
+}
