@@ -16,17 +16,19 @@
   &:hover {
     background: #192A7D;
     box-shadow: 0 2px 20px rgba($grey, 0.3);
+    color: #ffffff;
   }
 }
 
 .button--secondary { 
   @extend %button;
   background: transparent;
-  color: #394A9F;
+  color: $blue;
 
   &:hover {
     background: #ffffff;
     text-decoration: underline;
     box-shadow: 0 2px 20px rgba($grey, 0.3);
+    color: $blue;
   }
 }

@@ -1,6 +1,4 @@
-body {  
-  background: rgba(250,144,112,1);
-  background: linear-gradient(left, rgba(250,144,112,1) 0%, rgba(251,130,111,1) 100%);
+body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   -moz-osx-font-smoothing: grayscale;
@@ -10,6 +8,7 @@ body {
 }
 
 footer {
+  @include orange-gradient;
   text-align: center;
   padding: 24px;
 
@@ -22,4 +21,20 @@ footer {
       fill: #ffffff;
     }
   }
+}
+
+/* Logo */
+
+.logo {
+  height: 32px;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: -5px;
+  fill: $grey;
+  transition: all .1s ease-in-out;
+}
+
+.logo:hover {
+  fill: $orange;
+  transform: scale(1.2);
 }

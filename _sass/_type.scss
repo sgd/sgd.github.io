@@ -30,7 +30,11 @@ h6 {
 }
 
 a {
-  color: #394858;
+  color: $grey;
   text-decoration: underline;
   transition: all .1s ease-in-out;
+
+  &:hover {
+    color: $orange;
+  }
 }
