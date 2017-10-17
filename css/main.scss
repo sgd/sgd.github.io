@@ -1,11 +1,18 @@
 ---
 ---
 
-@import "neat/neat";
-@import "hamburgers/hamburgers";
-@import "variables";
-@import "scaffolding";
+// Base
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins:300,400,700');
 @import "normalize";
+@import "variables";
+
+// Plugins
+@import "neat/neat";
+@import "assets/slick/slick";
+@import "hamburgers/hamburgers";
+
+// Components
+@import "scaffolding";
 @import "type";
 @import "buttons";
 @import "nav";
