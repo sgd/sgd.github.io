@@ -2,8 +2,9 @@
   @include grid-container;
   padding-top: 80px;
   margin-bottom: 120px;
+}
 
-  blockquote {
+.story-container blockquote {
     @include grid-column(10);
     @include grid-shift(1);
     display: block;
@@ -13,8 +14,21 @@
     line-height: 1.75;
     margin-top: 64px;
     margin-bottom: 64px;
+
+    @media only screen and 
+    (max-width: $screen-sm){
+      @include grid-column(12);
+      @include grid-shift(0);
+      font-size: 31px;
+      margin-top: 24px;
+      margin-bottom: 32px;
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs){
+      font-size: 25px;
+    }
   }
-}
 
 .story__image-container {
   @include grid-column(12);
@@ -29,10 +43,20 @@
   figcaption {
     @include grid-column(8);
     @include grid-shift(2);
-    margin-left: 6px;
     font-size: 14px;
     color: $grey-medium;
     line-height: 1.5;
+
+    @media only screen and 
+    (max-width: $screen-md){
+      text-align: center;
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm){
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
   }
 }
 
@@ -41,7 +65,13 @@
   @include grid-shift(2);
 
   @media only screen and 
-  (max-width: $screen-sm){
+  (max-width: $screen-md){
+    @include grid-column(10);
+    @include grid-shift(1);
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs){
     @include grid-column(12);
     @include grid-shift(0);
   }
@@ -67,10 +97,22 @@
 
   .story__header-title {
     margin-bottom: 16px;
+
+    @media only screen and 
+    (max-width: $screen-sm){
+      font-size: 44px;
+    }
   }
 
   .story__header-subtitle {
     color: $grey-medium;
     margin-top: 0;
+  }
+}
+
+.story__section-header {
+  @media only screen and 
+  (max-width: $screen-sm){
+    font-size: 25px;
   }
 }
