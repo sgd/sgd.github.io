@@ -3,7 +3,7 @@
 header {
   @include grid-container;
   background: #ffffff;
-  padding: 104px 32px;
+  padding: 120px 32px;
 
   @media only screen and 
   (max-width: $screen-sm) {
