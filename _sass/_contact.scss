@@ -1,4 +1,4 @@
-.collaborate__header {
+.contact-header {
   padding-top: 104px;
   padding-bottom: 144px;
   background: $grey-light;
@@ -16,7 +16,7 @@
   }
 }
 
-.collaborate-options {
+.contact-options {
   @include grid-container;
   padding-bottom: 208px;
   margin-top: -48px;
@@ -29,7 +29,7 @@
   }
 }
 
-.collaborate__inner {
+.contact-options__inner {
   display: flex;
   @include grid-column(10);
   @include grid-shift(1);
