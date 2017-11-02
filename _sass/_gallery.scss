@@ -1,0 +1,17 @@
+.gallery-container {
+  @include grid-container;
+  padding: 100px;
+}
+
+.gallery-container__inner {
+  @include grid-column(12);
+}
+
+.gallery-image-link {
+  @include grid-column(3);
+  display: inline-block;
+}
+
+.gallery-image {
+  width: 100%;
+}
