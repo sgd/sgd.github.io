@@ -1,6 +1,7 @@
 .gallery-container {
   @include grid-container;
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .gallery-container__inner {
@@ -9,7 +10,12 @@
 
 .gallery-image-link {
   @include grid-column(3);
-  display: inline-block;
+  margin-bottom: 16px;
+  
+  @media only screen and 
+  (max-width: $screen-sm) {      
+    @include grid-column(6);
+  }
 }
 
 .gallery-image {
