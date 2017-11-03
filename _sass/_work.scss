@@ -31,7 +31,6 @@
 }
 
 .work__description {
-
   @media only screen and 
   (min-width: $screen-sm) {
     @include grid-column(5);
@@ -42,14 +41,22 @@
     @include grid-column(6);
   }
 
-   @media only screen and 
+  @media only screen and 
   (max-width: $screen-xs) {
     margin-bottom: 32px;
+  }
+
+  .button--primary {
+    margin-right: 8px;
+
+    @media only screen and 
+    (max-width: $screen-sm) {      
+      margin-right: 0;
+    }
   }
 }
 
 .work__image {
-
   @media only screen and 
   (min-width: $screen-sm) {
     @include grid-column(7);
@@ -115,18 +122,14 @@
   }
 }
 
-.company__name {
+.company__name,
+.portfolio__name {
   font-family: 'Libre Baskerville', sans-serif;
   margin-bottom: 8px;
 
   @media only screen and 
   (max-width: $screen-sm) {
     font-size: 25px;
-  }
-
-  @media only screen and 
-  (max-width: $screen-xs) {
-    font-size: 31px;
   }
 }
 
@@ -139,7 +142,8 @@
   color: $grey-medium;
 }
 
-.company__bodytext {
+.company__description,
+.portfolio__body {
   @media only screen and 
   (max-width: $screen-sm) {
     font-size: 16px;
