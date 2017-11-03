@@ -1,79 +1,27 @@
-
 .porfolio-header-overlap {
   @media only screen and 
   (min-width: $screen-sm){
+    
+    .work__description {
+      margin-top: 144px;
+    }
+
     margin-top: -72px;
     padding-top: 0;
     background: transparent;
   }
-
-  @media only screen and 
-  (min-width: $screen-sm){
-    .work__description {
-      margin-top: 144px;
-    }
-  }
 }
 
-.portfolio--right-image {
-  margin-bottom: 172px;
-
-  @media only screen and 
-  (max-width: $screen-sm){
-    margin-bottom: 136px;
-  }
-}
-
-// Portolio with centered image with offset BG
-
-.portfolio--offset {
-  @include grid-container;
-  background: $grey-light;
-  padding-bottom: 40px;
-  margin-bottom: 88px;
-
-  @media only screen and 
-  (max-width: $screen-sm){
-    padding-bottom: 24px;
-    margin-bottom: 64px;
-  }
-
-  .portfolio__description {
-    @include grid-column(6);
-    @include grid-shift(1);
-
-    @media only screen and 
-    (max-width: $screen-sm){
-      @include grid-column(10);
-      @include grid-shift(1);
-    }
-
-    @media only screen and 
-    (max-width: $screen-xs){
-      text-align: center;
-    }
-  }
-
-  .portfolio__image {
-    @include grid-column(10);
-    @include grid-shift(1);
-    margin-top: -72px;
-
-    @media only screen and 
-    (max-width: $screen-sm){
-      @include grid-column(12);
-      @include grid-shift(0);
-    }
-
-    img {
-      width: 100%;
-    }
-  }
-}
+// Portolio with centered image and text
 
 .portfolio--centered {
   @include grid-container;
-  margin-bottom: 172px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+
+  .portfolio__name {
+    margin-top: 0;
+  }
 
   .portfolio__description {
     @include grid-column(6);
