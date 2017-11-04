@@ -12,7 +12,7 @@ header {
   }
 
   .button--primary {
-    margin-right: 16px;
+    margin-right: 8px;
 
     @media only screen and 
     (max-width: $screen-sm) {      
@@ -20,12 +20,8 @@ header {
     }
   }
 
-  .button {
-    @media only screen and 
-    (max-width: $screen-sm) {      
-      margin-bottom: 8px;
-    }
-
+  .button--primary, 
+  .button--secondary {
     @media only screen and 
     (max-width: $screen-xs) {
       display: block;
@@ -35,34 +31,32 @@ header {
 
 .header__title {
   margin-top: 0;
+  margin-bottom: 0;
 
   @media only screen and 
-  (min-width: $screen-sm) and (max-width: $screen-sm-max) {
-    font-size: 44px;
-  }
-
-  @media only screen and 
-  (max-width: $screen-xs) {
-    font-size: 35px;
+  (max-width: $screen-sm) {
+    font-size: 37px;
   }
 }
 
 .header__subtitle {
+  margin-top: 24px;
+
   @media only screen and 
-  (max-width: $screen-xs) {
+  (max-width: $screen-sm) {
     font-size: 21px;
   }
 }
 
 .header__content {
-  @include grid-column(8);
-  @include grid-shift(2);
+  @include grid-column(7);
+  @include grid-shift(1);
   text-align: left;
 
   @media only screen and 
   (max-width: $screen-md) {
     @include grid-column(10);
-    @include grid-shift(1);
+    @include grid-shift(0);
   }
 
   @media only screen and 
@@ -75,3 +69,34 @@ header {
 .header__bodytext {
   margin-bottom: 40px;
 }
+
+
+// =============================================================================
+// Header - Grey
+// =============================================================================
+
+.header--grey {
+  padding-top: 104px;
+  padding-bottom: 144px;
+  background: $grey-light;
+
+  @media only screen and 
+  (max-width: $screen-md) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+

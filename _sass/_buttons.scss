@@ -25,10 +25,15 @@
   background: transparent;
   color: $blue;
 
+  @media only screen and 
+  (max-width: $screen-md) {
+    margin-top: 8px;
+  }
+
   &:hover {
     background: #ffffff;
     text-decoration: underline;
     box-shadow: 0 2px 20px rgba($grey, 0.3);
     color: $blue;
-  }
+  }  
 }

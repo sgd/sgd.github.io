@@ -1,24 +1,6 @@
-.contact-header {
-  padding-top: 104px;
-  padding-bottom: 144px;
-  background: $grey-light;
-
-  @media only screen and 
-  (max-width: $screen-md) {
-    padding-top: 104px;
-    padding-bottom: 104px;
-  }
-
-  @media only screen and 
-  (max-width: $screen-sm) {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
-}
-
 .contact-options {
   @include grid-container;
-  padding-bottom: 208px;
+  padding-bottom: 176px;
   margin-top: -48px;
 
   @media only screen and 

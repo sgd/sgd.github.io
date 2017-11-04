@@ -9,6 +9,8 @@
 // Plugins
 @import "neat/neat";
 @import "hamburgers/hamburgers";
+@import "slick";
+// @import "lightgallery";
 
 // Components
 @import "scaffolding";
@@ -17,8 +19,11 @@
 @import "nav";
 @import "header";
 @import "testimonials";
+@import "gallery";
+@import "sections";
 
 // Pages
 @import "work";
 @import "contact";
 @import "posts";
+@import "portfolio";
