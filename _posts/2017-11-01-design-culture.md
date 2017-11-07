@@ -58,7 +58,7 @@ Be open. Openesses meant that ideas and discussions were open to anyone regardle
 Take ownership. Taking ownership wasn&rsquo;t about accountability, it was about the designers having the independence to make decisions for themselves by taking ownership of the project. During my career I have been lucky enough never to have a micromanaging leader, which meant I have often had the autonomy to explore and make decisions (mistakes) for myself and really own anything I did. I wanted to continue working that way. Support was there if designers needed it, but nobody held anyone&rsquo;s hand. I think this is an amazing way to build confidence in more junior designers.
 
 <figure class="story__image-container">
-  <img src="/assets/img/group-research.png" alt="User Groups wireframe">
+  <img src="/assets/img/group-research.jpg" alt="User Groups wireframe">
   <figcaption>
     With a trusting team you can show all your work and learn faster. Some sketches from a co-creation exercise we did for a feature.
   </figcaption>
