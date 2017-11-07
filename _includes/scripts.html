@@ -3,7 +3,17 @@
 <!-- Hamburger menu icon animation -->
 <script>
 var $hamburger = $(".hamburger");
+
 $hamburger.on("click", function(e) {
   $hamburger.toggleClass("is-active");
+});
+</script>
+
+<!-- Style links on active page -->
+<script>
+var loc = window.location.pathname;
+
+$('.nav__inner').find('.nav__item').each(function() {
+  $(this).toggleClass('active', $(this).attr('href') == loc);
 });
 </script>

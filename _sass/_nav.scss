@@ -1,4 +1,6 @@
-/* Mobile Nav */ 
+// ============================================================================= 
+// Mobile Nav
+// ============================================================================= 
 
 .mobile-nav-trigger {
   border-bottom: 1px solid #e2e2e2;
@@ -28,7 +30,9 @@
   }
 }
 
-/* Desktop Nav */
+// ============================================================================= 
+// Desktop Nav
+// ============================================================================= 
 
 .desktop-nav {
   @include grid-container;
@@ -51,10 +55,14 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: 100;
+    transition: none;
 
     &:hover {
-      text-decoration: underline;
-      color: $grey;
+      color: $orange !important;
+    }
+
+    &.active {
+      color: rgba($grey, .5);
     }
   }
 
@@ -69,7 +77,9 @@
   align-items: center;
 }
 
-/* Slide out */
+// ============================================================================= 
+// Slideout menu CSS
+// ============================================================================= 
 
 .slideout-menu {
   position: fixed;
